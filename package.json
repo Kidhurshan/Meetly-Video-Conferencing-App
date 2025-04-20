@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "@types/ws": "^8.18.1",
+    "@vitejs/plugin-basic-ssl": "^2.0.0",
+    "ws": "^8.18.1"
+  }
+}
