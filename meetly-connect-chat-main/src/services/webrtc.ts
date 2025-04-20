@@ -226,7 +226,7 @@ export const useWebRTC = (roomId: string, userId: string, userName: string) => {
         const initialize = async () => {
             if (!isMountedRef.current || isInitializedRef.current) return;
             isInitializedRef.current = true; console.log('[Initialize] Starting...'); setError(null);
-            if (!navigator.mediaDevices?.getUserMedia || !window.WebSocket || YOUR_SIGNALING_SERVER_IP === '192.168.73.240') { /* handle prerequisite check */
+            if (!navigator.mediaDevices?.getUserMedia || !window.WebSocket || YOUR_SIGNALING_SERVER_IP === 'YOUR_COMPUTER_IP_ADDRESS') { /* handle prerequisite check */
                  const errorMsg = !navigator.mediaDevices?.getUserMedia ? "getUserMedia not supported (HTTPS needed)." : !window.WebSocket ? "WebSockets not supported." : "Signaling server IP not configured."; console.error("[Initialize] Prerequisite failed:", errorMsg); if (isMountedRef.current) { setError(errorMsg); toast({ title: "Setup Error", description: errorMsg, variant: "destructive" }); } isInitializedRef.current = false; return;
             }
 
