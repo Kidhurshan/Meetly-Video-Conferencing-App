@@ -47,37 +47,67 @@ Meetly is built using a modern web stack:
 
 ## Project Structure
 
-├── public/ # Static assets (like favicon)
+```
+meetly/
+├── public/
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── logo.png
+│   │   │   └── icons/
+│   │   └── styles/
+│   └── favicon.ico
 ├── src/
-│ ├── components/ # Reusable React components (UI & App-specific)
-│ │ ├── ui/ # shadcn/ui components
-│ │ ├── ChatPanel.tsx
-│ │ ├── MeetingRoom.tsx
-│ │ └── VideoPlayer.tsx
-│ ├── hooks/ # Custom React hooks (e.g., use-toast)
-│ ├── lib/ # Utility functions (e.g., cn for classnames)
-│ ├── pages/ # Page-level components (Home, Room, NotFound)
-│ ├── services/ # Core logic (e.g., webrtc.ts)
-│ ├── utils/ # Helper functions (e.g., ID generation)
-│ ├── App.tsx # Main application component (routing)
-│ ├── index.css # Global styles & Tailwind directives
-│ └── main.tsx # Application entry point
-├── .gitignore # Files to ignore for Git
-├── cert.pem # Generated SSL Certificate (Dev Only - DO NOT COMMIT IF PUBLIC)
-├── components.json # shadcn/ui configuration
-├── eslint.config.js # ESLint configuration
-├── index.html # Main HTML entry point
-├── key.pem # Generated SSL Private Key (Dev Only - DO NOT COMMIT)
-├── package-lock.json # Exact dependency versions
-├── package.json # Project metadata and dependencies
-├── postcss.config.js # PostCSS configuration (for Tailwind/Autoprefixer)
-├── README.md # This file
-├── signaling-server.js # Separate Node.js WebSocket signaling server
-├── tailwind.config.ts # Tailwind CSS configuration
-├── tsconfig.app.json # TypeScript config for the app
-├── tsconfig.json # Base TypeScript config
-├── tsconfig.node.json # TypeScript config for Node.js files (like vite.config)
-└── vite.config.ts # Vite configuration
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── auth/
+│   │   │   ├── meetings/
+│   │   │   └── users/
+│   │   ├── meetings/
+│   │   │   ├── [id]/
+│   │   │   └── page.tsx
+│   │   ├── profile/
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── auth/
+│   │   ├── common/
+│   │   ├── meetings/
+│   │   └── ui/
+│   ├── config/
+│   │   └── constants.ts
+│   ├── hooks/
+│   │   ├── useAuth.ts
+│   │   └── useWebRTC.ts
+│   ├── lib/
+│   │   ├── api.ts
+│   │   └── utils.ts
+│   ├── services/
+│   │   ├── auth.service.ts
+│   │   └── meeting.service.ts
+│   ├── store/
+│   │   └── index.ts
+│   ├── types/
+│   │   └── index.ts
+│   └── styles/
+│       └── globals.css
+├── server/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── services/
+│   └── socket/
+├── tests/
+│   ├── e2e/
+│   └── unit/
+├── .env
+├── .env.example
+├── .gitignore
+├── package.json
+├── tsconfig.json
+├── next.config.js
+└── README.md
+```
 
 ## Installation and Setup (Development)
 
