@@ -1,7 +1,8 @@
 # Meetly - Real-Time Video Conferencing Application
 
 <!-- Optional: Insert a banner image/logo for Meetly here -->
-![image](https://github.com/user-attachments/assets/719ab0b8-7c93-4f03-b6e2-ed84a373e114)
+![image](https://github.com/user-attachments/assets/66cc0c5e-a89e-49aa-b609-6a989ffddad4)
+
 
 <!-- ![Meetly Banner](path/to/your/banner_image.png) -->
 
