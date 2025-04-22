@@ -240,12 +240,4 @@ You need to run **two separate processes** in two different terminal windows:
 
 Contributions are welcome! Please feel free to submit a Pull Request or open an Issue.
 
-*(Add more specific contribution guidelines if applicable)*
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details (if you have one).
-
 ---
