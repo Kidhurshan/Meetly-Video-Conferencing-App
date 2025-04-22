@@ -1,33 +1,32 @@
-# Meetly - Real-Time Video Conferencing 📹
+# Meetly - Real-Time Video Conferencing Application
 
-Meetly is a web-based video conferencing application designed for real-time collaboration, built using modern web technologies including WebRTC, React, and Node.js.
+<!-- Optional: Insert a banner image/logo for Meetly here -->
+<!-- ![Meetly Banner](path/to/your/banner_image.png) -->
 
-<!-- ![Meetly Logo](public/assets/images/logo.png) <--- Add your logo here if you have one -->
+Meetly is a web-based video conferencing application designed for real-time communication and collaboration. Built with modern web technologies, it allows users to create secure video rooms, join existing rooms using a simple code, and interact via video, audio, and text chat.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <!-- Example Badge -->
+<!-- Insert Screenshot of Meetly Home Screen here -->
+<!-- ![Meetly Home Screen](./path/to/home_screen_screenshot.png) -->
+*Meetly Home Screen - Create or Join a Room*
 
----
+<!-- Insert Screenshot of Meetly Meeting Room here -->
+<!-- ![Meetly Meeting Room](./path/to/meeting_room_screenshot.png) -->
+*Meetly Meeting Room - Grid View Example*
 
-## ✨ Features
+## Features
 
-*   ✅ **Real-time Video & Audio:** High-quality, low-latency peer-to-peer communication.
-*   ✅ **Room Creation & Joining:** Easily create unique rooms or join existing ones with a simple code.
-*   ✅ **Media Controls:** Mute/unmute microphone and turn the camera on/off during calls.
-*   ✅ **Text Chat:** Integrated chat panel for real-time text messaging within the room.
-*   ✅ **Participant List:** See the number of participants currently in the room.
-*   ✅ **Secure Connections:** Uses HTTPS/WSS for secure communication and camera/microphone access.
-*   ✅ **Responsive Design:** Basic layout adjustments for different screen sizes.
+Meetly offers the following core features:
 
----
-
-## 🖼️ Screenshots
-
-<!-- Add links to your actual screenshots -->
-<!-- ![Meetly Home Screen](./path/to/your/home_screen.png) -->
-*Screenshot: Meetly Home Screen - Creating/Joining a Room*
-
-<!-- ![Meetly Meeting Room](./path/to/your/meeting_room.png) -->
-*Screenshot: Meetly Meeting Room - Video Grid and Controls*
+*   **Room Creation:** Easily generate a unique, secure room for your meeting.
+*   **Room Joining:** Join existing meetings using a simple 6-character room code.
+*   **Real-Time Video/Audio:** High-quality, peer-to-peer video and audio streaming powered by WebRTC.
+*   **Text Chat:** Integrated chat panel for text communication within the meeting room.
+*   **Mute/Unmute Audio:** Control your microphone input.
+*   **Enable/Disable Video:** Control your camera input.
+*   **Participant Count:** See the number of participants currently in the room.
+*   **Room Code Sharing:** Easily copy the room code to invite others.
+*   **Multiple Layouts:** Switch between a grid view (showing all participants equally) and a focus view (highlighting one speaker with thumbnails for others).
+*   **Secure Connections:** Uses HTTPS for the application and WSS (Secure WebSockets) for signaling, ensuring secure communication channels (requires local setup using `mkcert` for development).
 
 ---
 
