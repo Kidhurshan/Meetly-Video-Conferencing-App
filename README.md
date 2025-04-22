@@ -1,3 +1,83 @@
+# Meetly - Real-Time Video Conferencing Application
+
+<!-- Optional: Insert a banner image/logo for Meetly here -->
+<!-- ![Meetly Banner](path/to/your/banner_image.png) -->
+
+Meetly is a web-based video conferencing application designed for real-time communication and collaboration. Built with modern web technologies, it allows users to create secure video rooms, join existing rooms using a simple code, and interact via video, audio, and text chat.
+
+<!-- Insert Screenshot of Meetly Home Screen here -->
+<!-- ![Meetly Home Screen](./path/to/home_screen_screenshot.png) -->
+*Meetly Home Screen - Create or Join a Room*
+
+<!-- Insert Screenshot of Meetly Meeting Room here -->
+<!-- ![Meetly Meeting Room](./path/to/meeting_room_screenshot.png) -->
+*Meetly Meeting Room - Grid View Example*
+
+## Features
+
+Meetly offers the following core features:
+
+*   **Room Creation:** Easily generate a unique, secure room for your meeting.
+*   **Room Joining:** Join existing meetings using a simple 6-character room code.
+*   **Real-Time Video/Audio:** High-quality, peer-to-peer video and audio streaming powered by WebRTC.
+*   **Text Chat:** Integrated chat panel for text communication within the meeting room.
+*   **Mute/Unmute Audio:** Control your microphone input.
+*   **Enable/Disable Video:** Control your camera input.
+*   **Participant Count:** See the number of participants currently in the room.
+*   **Room Code Sharing:** Easily copy the room code to invite others.
+*   **Multiple Layouts:** Switch between a grid view (showing all participants equally) and a focus view (highlighting one speaker with thumbnails for others).
+*   **Secure Connections:** Uses HTTPS for the application and WSS (Secure WebSockets) for signaling, ensuring secure communication channels (requires local setup using `mkcert` for development).
+
+## Technology Stack
+
+Meetly is built using a modern web stack:
+
+| Category          | Technology/Library                                      | Purpose                                                      |
+| :---------------- | :------------------------------------------------------ | :----------------------------------------------------------- |
+| **Frontend**      | [React](https://reactjs.org/)                           | Building the user interface                                  |
+|                   | [Vite](https://vitejs.dev/)                             | Fast development server and build tool                       |
+|                   | [TypeScript](https://www.typescriptlang.org/)           | Superset of JavaScript adding static typing                  |
+| **UI Components** | [shadcn/ui](https://ui.shadcn.com/)                     | Re-usable UI components (Buttons, Dialogs, etc.)             |
+|                   | [Tailwind CSS](https://tailwindcss.com/)                | Utility-first CSS framework for styling                      |
+| **Real-Time**     | [WebRTC](https://webrtc.org/)                           | Peer-to-peer video, audio, and data communication            |
+|                   | [PeerJS](https://peerjs.com/)                           | Library simplifying WebRTC peer connections and broker usage  |
+| **Signaling**     | [Node.js](https://nodejs.org/)                          | Backend runtime environment for the signaling server         |
+|                   | [ws (WebSocket library)](https://github.com/websockets/ws) | Enables real-time, two-way communication for signaling       |
+|                   | [mkcert](https://github.com/FiloSottile/mkcert)         | Tool for creating locally trusted SSL certificates (Dev Only) |
+
+## Project Structure
+
+├── public/ # Static assets (like favicon)
+├── src/
+│ ├── components/ # Reusable React components (UI & App-specific)
+│ │ ├── ui/ # shadcn/ui components
+│ │ ├── ChatPanel.tsx
+│ │ ├── MeetingRoom.tsx
+│ │ └── VideoPlayer.tsx
+│ ├── hooks/ # Custom React hooks (e.g., use-toast)
+│ ├── lib/ # Utility functions (e.g., cn for classnames)
+│ ├── pages/ # Page-level components (Home, Room, NotFound)
+│ ├── services/ # Core logic (e.g., webrtc.ts)
+│ ├── utils/ # Helper functions (e.g., ID generation)
+│ ├── App.tsx # Main application component (routing)
+│ ├── index.css # Global styles & Tailwind directives
+│ └── main.tsx # Application entry point
+├── .gitignore # Files to ignore for Git
+├── cert.pem # Generated SSL Certificate (Dev Only - DO NOT COMMIT IF PUBLIC)
+├── components.json # shadcn/ui configuration
+├── eslint.config.js # ESLint configuration
+├── index.html # Main HTML entry point
+├── key.pem # Generated SSL Private Key (Dev Only - DO NOT COMMIT)
+├── package-lock.json # Exact dependency versions
+├── package.json # Project metadata and dependencies
+├── postcss.config.js # PostCSS configuration (for Tailwind/Autoprefixer)
+├── README.md # This file
+├── signaling-server.js # Separate Node.js WebSocket signaling server
+├── tailwind.config.ts # Tailwind CSS configuration
+├── tsconfig.app.json # TypeScript config for the app
+├── tsconfig.json # Base TypeScript config
+├── tsconfig.node.json # TypeScript config for Node.js files (like vite.config)
+└── vite.config.ts # Vite configuration
 
 ## Installation and Setup (Development)
 
