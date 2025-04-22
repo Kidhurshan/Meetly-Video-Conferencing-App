@@ -13,7 +13,7 @@ Meetly is a web-based video conferencing application designed for real-time comm
 <!-- ![Meetly Meeting Room](./path/to/meeting_room_screenshot.png) -->
 *Meetly Meeting Room - Grid View Example*
 
-##✨ Features
+## ✨ Features
 
 Meetly offers the following core features:
 
