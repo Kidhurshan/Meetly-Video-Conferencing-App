@@ -48,7 +48,7 @@ Meetly is built using a modern web stack:
 ## Project Structure
 
 ```
-meetly/
+meetly-connect-chat-main/
 ├── public/
 │   ├── assets/
 │   │   ├── images/
