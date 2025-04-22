@@ -1,15 +1,21 @@
 # Meetly - Real-Time Video Conferencing Application
 
 <!-- Optional: Insert a banner image/logo for Meetly here -->
+![image](https://github.com/user-attachments/assets/719ab0b8-7c93-4f03-b6e2-ed84a373e114)
+
 <!-- ![Meetly Banner](path/to/your/banner_image.png) -->
 
 Meetly is a web-based video conferencing application designed for real-time communication and collaboration. Built with modern web technologies, it allows users to create secure video rooms, join existing rooms using a simple code, and interact via video, audio, and text chat.
 
 <!-- Insert Screenshot of Meetly Home Screen here -->
+![image](https://github.com/user-attachments/assets/37866358-e59d-4e9a-a554-79c5d3e852f2)
+
 <!-- ![Meetly Home Screen](./path/to/home_screen_screenshot.png) -->
 *Meetly Home Screen - Create or Join a Room*
 
 <!-- Insert Screenshot of Meetly Meeting Room here -->
+![image](https://github.com/user-attachments/assets/486bc1fb-333e-4974-8738-2e052d73dfa4)
+
 <!-- ![Meetly Meeting Room](./path/to/meeting_room_screenshot.png) -->
 *Meetly Meeting Room - Grid View Example*
 
