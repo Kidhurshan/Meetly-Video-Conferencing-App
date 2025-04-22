@@ -1,54 +1,56 @@
-# Meetly - Real-Time Video Conferencing Application
+# Meetly - Real-Time Video Conferencing 📹
 
-<!-- Optional: Insert a banner image/logo for Meetly here -->
-<!-- ![Meetly Banner](path/to/your/banner_image.png) -->
+Meetly is a web-based video conferencing application designed for real-time collaboration, built using modern web technologies including WebRTC, React, and Node.js.
 
-Meetly is a web-based video conferencing application designed for real-time communication and collaboration. Built with modern web technologies, it allows users to create secure video rooms, join existing rooms using a simple code, and interact via video, audio, and text chat.
+<!-- ![Meetly Logo](public/assets/images/logo.png) <--- Add your logo here if you have one -->
 
-<!-- Insert Screenshot of Meetly Home Screen here -->
-<!-- ![Meetly Home Screen](./path/to/home_screen_screenshot.png) -->
-*Meetly Home Screen - Create or Join a Room*
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <!-- Example Badge -->
 
-<!-- Insert Screenshot of Meetly Meeting Room here -->
-<!-- ![Meetly Meeting Room](./path/to/meeting_room_screenshot.png) -->
-*Meetly Meeting Room - Grid View Example*
+---
 
-## Features
+## ✨ Features
 
-Meetly offers the following core features:
+*   ✅ **Real-time Video & Audio:** High-quality, low-latency peer-to-peer communication.
+*   ✅ **Room Creation & Joining:** Easily create unique rooms or join existing ones with a simple code.
+*   ✅ **Media Controls:** Mute/unmute microphone and turn the camera on/off during calls.
+*   ✅ **Text Chat:** Integrated chat panel for real-time text messaging within the room.
+*   ✅ **Participant List:** See the number of participants currently in the room.
+*   ✅ **Secure Connections:** Uses HTTPS/WSS for secure communication and camera/microphone access.
+*   ✅ **Responsive Design:** Basic layout adjustments for different screen sizes.
 
-*   **Room Creation:** Easily generate a unique, secure room for your meeting.
-*   **Room Joining:** Join existing meetings using a simple 6-character room code.
-*   **Real-Time Video/Audio:** High-quality, peer-to-peer video and audio streaming powered by WebRTC.
-*   **Text Chat:** Integrated chat panel for text communication within the meeting room.
-*   **Mute/Unmute Audio:** Control your microphone input.
-*   **Enable/Disable Video:** Control your camera input.
-*   **Participant Count:** See the number of participants currently in the room.
-*   **Room Code Sharing:** Easily copy the room code to invite others.
-*   **Multiple Layouts:** Switch between a grid view (showing all participants equally) and a focus view (highlighting one speaker with thumbnails for others).
-*   **Secure Connections:** Uses HTTPS for the application and WSS (Secure WebSockets) for signaling, ensuring secure communication channels (requires local setup using `mkcert` for development).
+---
 
-## Technology Stack
+## 🖼️ Screenshots
 
-Meetly is built using a modern web stack:
+<!-- Add links to your actual screenshots -->
+<!-- ![Meetly Home Screen](./path/to/your/home_screen.png) -->
+*Screenshot: Meetly Home Screen - Creating/Joining a Room*
 
-| Category          | Technology/Library                                      | Purpose                                                      |
-| :---------------- | :------------------------------------------------------ | :----------------------------------------------------------- |
-| **Frontend**      | [React](https://reactjs.org/)                           | Building the user interface                                  |
-|                   | [Vite](https://vitejs.dev/)                             | Fast development server and build tool                       |
-|                   | [TypeScript](https://www.typescriptlang.org/)           | Superset of JavaScript adding static typing                  |
-| **UI Components** | [shadcn/ui](https://ui.shadcn.com/)                     | Re-usable UI components (Buttons, Dialogs, etc.)             |
-|                   | [Tailwind CSS](https://tailwindcss.com/)                | Utility-first CSS framework for styling                      |
-| **Real-Time**     | [WebRTC](https://webrtc.org/)                           | Peer-to-peer video, audio, and data communication            |
-|                   | [PeerJS](https://peerjs.com/)                           | Library simplifying WebRTC peer connections and broker usage  |
-| **Signaling**     | [Node.js](https://nodejs.org/)                          | Backend runtime environment for the signaling server         |
-|                   | [ws (WebSocket library)](https://github.com/websockets/ws) | Enables real-time, two-way communication for signaling       |
-|                   | [mkcert](https://github.com/FiloSottile/mkcert)         | Tool for creating locally trusted SSL certificates (Dev Only) |
+<!-- ![Meetly Meeting Room](./path/to/your/meeting_room.png) -->
+*Screenshot: Meetly Meeting Room - Video Grid and Controls*
 
-## Project Structure
+---
 
+## 💻 Technology Stack
+
+Meetly leverages the following technologies:
+
+| Category         | Technology / Library                                     | Purpose                                       |
+| :--------------- | :------------------------------------------------------- | :-------------------------------------------- |
+| **Frontend**     | React, Vite, TypeScript                                  | Building the user interface & application logic |
+| **Styling**      | Tailwind CSS, shadcn/ui                                  | UI design and components                      |
+| **Real-time**    | WebRTC                                                   | Peer-to-peer video/audio/data streaming     |
+|                  | PeerJS                                                   | Simplifying WebRTC connection setup           |
+| **Signaling**    | Node.js, WebSocket (`ws` library), HTTPS/WSS             | User discovery & connection coordination    |
+| **Dev Security** | `mkcert`                                                 | Generating locally trusted SSL certificates   |
+
+---
+
+## 📁 Project Structure
+
+This project follows a structured organization 
 ```
-meetly-connect-chat-main/
+meetly/
 ├── public/
 │   ├── assets/
 │   │   ├── images/
@@ -109,22 +111,27 @@ meetly-connect-chat-main/
 └── README.md
 ```
 
-## Installation and Setup (Development)
+*Note: The structure above includes common directories found in larger full-stack apps (like `app`, `server`, `tests`, etc.). The current implementation mainly uses `src`, `public`, and the root configuration files, along with the separate `signaling-server.js`.*
 
-Follow these steps to set up and run Meetly locally for development and testing.
+---
 
-**Prerequisites:**
+## 📋 Prerequisites
 
-*   [Node.js](https://nodejs.org/) (LTS version recommended, e.g., v18 or v20)
-*   [npm](https://www.npmjs.com/) (comes with Node.js)
-*   `mkcert` installed (for generating local SSL certificates)
+Before you begin, ensure you have the following installed:
 
-**Steps:**
+*   **Node.js:** LTS version (e.g., v18 or v20) recommended. Download from [nodejs.org](https://nodejs.org/).
+*   **npm:** Usually comes bundled with Node.js.
+*   **`mkcert`:** Tool for creating locally-trusted development certificates. Installation instructions below.
+*   **Git:** For cloning the repository.
+
+---
+
+## ⚙️ Installation
 
 1.  **Clone the Repository:**
     ```bash
     git clone <your-repository-url>
-    cd meetly-project # Or your project directory name
+    cd meetly # Or your project directory name
     ```
 
 2.  **Install Dependencies:**
@@ -132,70 +139,114 @@ Follow these steps to set up and run Meetly locally for development and testing.
     npm install
     ```
 
-3.  **Setup `mkcert` (One-Time Setup per Machine):**
-    *   Install `mkcert` if you haven't already (see [mkcert installation instructions](https://github.com/FiloSottile/mkcert#installation)).
-    *   Install the local Certificate Authority (CA):
-        ```bash
-        mkcert -install
-        ```
-        (You might need administrator/sudo privileges).
+---
 
-4.  **Generate Local SSL Certificates:**
-    *   **Find your local IP address:** Use `ipconfig` (Windows) or `ifconfig`/`ip addr` (macOS/Linux) to find the IP address of your machine on your current network (e.g., `192.168.1.123`).
-    *   **Navigate to the project root directory** in your terminal.
-    *   **Run `mkcert`:** Replace `<your-local-ip>` with your actual IP.
-        ```bash
-        # Example: Replace 192.168.1.123 with YOUR IP
-        mkcert localhost 127.0.0.1 ::1 <your-local-ip>
-        ```
-    *   **Rename the generated files:** Rename the created `.pem` file to `cert.pem` and the `-key.pem` file to `key.pem`. These should now be in your project root.
-    *   **Ensure `.gitignore`:** Make sure `*.pem` is listed in your `.gitignore` file.
+## 🔧 Configuration (CRITICAL)
 
-5.  **Configure Signaling Server IP:**
-    *   Open the file `src/services/webrtc.ts`.
-    *   Find the line: `const YOUR_SIGNALING_SERVER_IP = 'YOUR_COMPUTER_IP_ADDRESS';`
-    *   **Replace `'YOUR_COMPUTER_IP_ADDRESS'`** with the **same local IP address** you used in the `mkcert` command above. Save the file.
+This application requires **secure connections (HTTPS/WSS)** to access camera/microphone via WebRTC, even during local development. We use `mkcert` to create locally trusted SSL certificates.
 
-6.  **Run the Servers:** You need to run two separate processes:
-    *   **Terminal 1 (Signaling Server):**
+**Step 1: Install `mkcert` and Local CA**
+
+1.  **Install `mkcert`:** Follow the official instructions for your OS:
+    [**mkcert Installation Guide**](https://github.com/FiloSottile/mkcert#installation)
+    *(Requires package managers like Chocolatey (Win), Homebrew (Mac), or manual steps for Linux).*
+2.  **Install Local CA (One-time setup per machine):** Open your terminal (as Admin on Windows if needed) and run:
+    ```bash
+    mkcert -install
+    ```
+    *(You might need to enter your system password).*
+
+**Step 2: Generate SSL Certificates for Your Network IP** 🔑
+
+1.  **Find Your Local IP Address:** Determine the **IPv4 address** of the machine where you will run the signaling server (e.g., `192.168.X.Y`). Use `ipconfig` (Win) or `ip addr`/`ifconfig` (Mac/Linux).
+2.  **Navigate to Project Root:** Open your terminal in the project directory.
+3.  **Run `mkcert`:** Replace `YOUR_LOCAL_IP` with the actual IP address you found.
+    ```bash
+    # --- Replace YOUR_LOCAL_IP with your actual IP ---
+    mkcert localhost 127.0.0.1 ::1 YOUR_LOCAL_IP
+    ```
+    *Example:* `mkcert localhost 127.0.0.1 ::1 192.168.73.240`
+4.  **Rename Output Files:** `mkcert` will create two files (e.g., `localhost+3.pem` and `localhost+3-key.pem`). Rename them exactly:
+    *   Rename the `.pem` file to `cert.pem`
+    *   Rename the `-key.pem` file to `key.pem`
+5.  **Verify:** Ensure `cert.pem` and `key.pem` are now in your project root.
+6.  **Git Ignore:** Add `*.pem` to your `.gitignore` file to avoid committing these private keys.
+
+**Step 3: Update IP Address in Code** 💻
+
+1.  Open the file: `src/services/webrtc.ts`
+2.  Find the line:
+    ```typescript
+    const YOUR_SIGNALING_SERVER_IP = 'YOUR_COMPUTER_IP_ADDRESS'; // <--- *** CHANGE THIS LINE ***
+    ```
+3.  **Replace `'YOUR_COMPUTER_IP_ADDRESS'`** with the **same local IP address** you used in the `mkcert` command (Step 2.3). Make sure it's enclosed in quotes.
+    *Example:* `const YOUR_SIGNALING_SERVER_IP = '192.168.73.240';`
+4.  Save the file.
+
+---
+
+## ▶️ Running the Application
+
+You need to run **two separate processes** in two different terminal windows:
+
+1.  **Terminal 1: Start the Signaling Server** ⚙️
+    *   Navigate to the project root directory.
+    *   Run:
         ```bash
         npm run signal
-        # Or: node signaling-server.js
         ```
-        Keep this running. It should log that the secure signaling server is listening on port 3001.
-    *   **Terminal 2 (Vite Dev Server):**
+        *(This executes `node signaling-server.js` as defined in `package.json`)*
+    *   Keep this terminal open. You should see logs indicating the secure signaling server is listening on port 3001.
+
+2.  **Terminal 2: Start the Vite Development Server (React App)** ✨
+    *   Navigate to the project root directory.
+    *   Run:
         ```bash
         npm run dev
         ```
-        Keep this running. Note the `Network:` URL (e.g., `https://<your-local-ip>:8080/`).
+    *   Vite will compile the app and provide URLs. Note the **`Network:` URL** (e.g., `https://192.168.X.Y:8080/`).
+    *   Keep this terminal open.
 
-## Usage
+---
 
-1.  **Access the App:** Open your web browser and navigate to the **`Network:` URL** provided by Vite (e.g., `https://<your-local-ip>:8080/`).
-2.  **Accept Security Warning:** Since you're using self-signed certificates, your browser will show a security warning. Click "Advanced" and "Proceed to `<your-ip>` (unsafe)". You might need to do this for *both* port 8080 (Vite) and port 3001 (Signaling Server - try visiting `https://<your-ip>:3001` directly if the WebSocket connection fails initially).
-3.  **User 1 (Create Room):**
-    *   Enter your name.
-    *   Click "Create a new room instead".
-    *   Click "Create New Room".
-    *   Allow camera/microphone permissions if prompted.
-    *   Note the 6-character **Room Code** displayed.
-4.  **User 2 (Join Room - on a different device on the *same* WiFi network):**
-    *   Access the same **`Network:` URL** (e.g., `https://<your-local-ip>:8080/`) in their browser.
-    *   Accept any security warnings.
-    *   Enter their name.
-    *   Enter the **Room Code** provided by User 1.
+## 🚀 Usage / Testing (Multi-Device on Same WiFi)
+
+1.  **Device 1 (Creator):**
+    *   Open a browser and navigate to the **Network HTTPS URL** from Vite (e.g., `https://<your-ip>:8080/`).
+    *   **Accept Security Warning:** Click "Advanced" -> "Proceed..." (for port 8080).
+    *   **Check Console (Optional):** Open the browser console (F12). If you see errors about connecting to `wss://<your-ip>:3001`, you might need to manually visit `https://<your-ip>:3001` once and accept *its* security warning too, then refresh the app page.
+    *   Enter a name.
+    *   Create a new room.
+    *   Allow camera/microphone permissions.
+    *   Note the **Room Code**.
+    *   Check the Signaling Server terminal (Terminal 1) for connection logs.
+
+2.  **Device 2 (Joiner - On Same WiFi):**
+    *   Open a browser and navigate to the **same Network HTTPS URL** (e.g., `https://<your-ip>:8080/`).
+    *   Accept security warning(s) for ports 8080 and potentially 3001.
+    *   Enter a *different* name.
+    *   Enter the **Room Code** from Device 1.
     *   Click "Join Room".
     *   Allow camera/microphone permissions.
-5.  **Connect:** After a few seconds, the WebRTC connection should establish, and both users should see each other's video feeds.
-6.  **Interact:** Use the controls to mute/unmute audio, enable/disable video, and use the chat panel.
-7.  **Leave:** Click the "Leave Room" button to disconnect and return to the home screen.
 
-## Contributing
+3.  **Verify:**
+    *   Wait a few seconds for connections to establish.
+    *   Both devices should see each other's video/audio.
+    *   Test mute/video controls and the chat feature.
+    *   Check both terminal and browser consoles for connection status and any errors.
 
-(Optional: Add guidelines if you want others to contribute)
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
+---
 
-## License
+## 🙏 Contributing
 
-(Optional: Specify your license, e.g., MIT)
-[MIT](https://choosealicense.com/licenses/mit/)
+Contributions are welcome! Please feel free to submit a Pull Request or open an Issue.
+
+*(Add more specific contribution guidelines if applicable)*
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details (if you have one).
+
+---
