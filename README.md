@@ -1,7 +1,7 @@
 # Meetly - Enterprise Video Conferencing Solution
 
 <div align="center">
-![Meetly Logo]<img width="1908" height="881" alt="image" src="https://github.com/user-attachments/assets/ceed4c33-f03b-491a-aee9-7fb680967b80" />
+<img width="1908" height="881" alt="image" src="https://github.com/user-attachments/assets/ceed4c33-f03b-491a-aee9-7fb680967b80" />
 
 [![Next.js](https://img.shields.io/badge/Next.js-13.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18.0-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
@@ -54,14 +54,17 @@ Watch a live demonstration of Meetly on YouTube:
 ## 📋Screenshots
 
 ### Home Page
-<img width="1908" height="881" alt="image" src="https://github.com/user-attachments/assets/0bd1ed14-3133-4239-a5e1-88a27aa8e356" />
-
+<p align="center">
+<img width="1700" alt="image" src="https://github.com/user-attachments/assets/0bd1ed14-3133-4239-a5e1-88a27aa8e356" />
+</p>
 ### Meeting Room
-<img width="1716" height="817" alt="image" src="https://github.com/user-attachments/assets/ec367ec3-c9d8-47d7-be32-e4b95fcda763" />
-
+<p align="center">
+<img width="1700" alt="image" src="https://github.com/user-attachments/assets/ec367ec3-c9d8-47d7-be32-e4b95fcda763" />
+</p>
 ### Chat Panel
-<img width="1726" height="815" alt="image" src="https://github.com/user-attachments/assets/340f0f48-5b04-43ac-a513-d697c655cd08" />
-
+<p align="center">
+<img width="1700" alt="image" src="https://github.com/user-attachments/assets/340f0f48-5b04-43ac-a513-d697c655cd08" />
+</p>
 
 ## Features
 
