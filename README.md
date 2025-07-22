@@ -1,8 +1,7 @@
 # Meetly - Enterprise Video Conferencing Solution
 
 <div align="center">
-
-![Meetly Logo](public/assets/images/logo.png)
+![Meetly Logo]<img width="1908" height="881" alt="image" src="https://github.com/user-attachments/assets/ceed4c33-f03b-491a-aee9-7fb680967b80" />
 
 [![Next.js](https://img.shields.io/badge/Next.js-13.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18.0-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
@@ -32,7 +31,7 @@ A modern, scalable video conferencing platform built for enterprise-grade commun
 
 Meetly is an enterprise-grade video conferencing solution that enables seamless real-time communication across different platforms. Built with modern technologies and best practices, it provides high-quality video calls, instant messaging, and collaborative features for both personal and professional use.
 
-### Key Benefits
+### 💡Key Benefits
 
 - **Enterprise-Ready**: Built with scalability and security in mind
 - **Cross-Platform**: Works seamlessly across desktop and mobile devices
@@ -40,32 +39,29 @@ Meetly is an enterprise-grade video conferencing solution that enables seamless 
 - **Secure**: End-to-end encryption and enterprise-grade security
 - **Customizable**: Flexible architecture for custom integrations
 
-## Demo
+## 🎥Demo
 
-Watch a live demonstration of Meetly on YouTube:  
-[![Meetly Demo](https://img.youtube.com/vi/LlQo6g2Lkfg/0.jpg)](https://youtu.be/LlQo6g2Lkfg)
-
-[https://youtu.be/LlQo6g2Lkfg](https://youtu.be/LlQo6g2Lkfg)
+<h2 align="center">🎥 Project Demo</h2>
+Watch a live demonstration of Meetly on YouTube:
+<p align="center">
+  <a href="https://youtu.be/LlQo6g2Lkfg">
+    <img src="https://github.com/user-attachments/assets/4f52f822-248b-4b85-ad83-62f251765dc3" alt="Project Demo Video" width="600" />
+  </a>
+</p>
 
 ---
 
-## Screenshots
-
-<!--
-Replace the image paths below with your actual screenshot files.
-Place your screenshots in the `public/assets/screenshots/` directory (create it if it doesn't exist).
--->
+## 📋Screenshots
 
 ### Home Page
-![Home Page](public/assets/screenshots/homepage.png)
+<img width="1908" height="881" alt="image" src="https://github.com/user-attachments/assets/0bd1ed14-3133-4239-a5e1-88a27aa8e356" />
 
 ### Meeting Room
-![Meeting Room](public/assets/screenshots/meeting-room.png)
+<img width="1716" height="817" alt="image" src="https://github.com/user-attachments/assets/ec367ec3-c9d8-47d7-be32-e4b95fcda763" />
 
 ### Chat Panel
-![Chat Panel](public/assets/screenshots/chat-panel.png)
+<img width="1726" height="815" alt="image" src="https://github.com/user-attachments/assets/340f0f48-5b04-43ac-a513-d697c655cd08" />
 
-<!-- Add more screenshots as needed -->
 
 ## Features
 
