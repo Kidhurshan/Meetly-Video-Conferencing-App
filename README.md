@@ -55,15 +55,17 @@ Watch a live demonstration of Meetly on YouTube:
 
 ### Home Page
 <p align="center">
-<img width="1700" alt="image" src="https://github.com/user-attachments/assets/0bd1ed14-3133-4239-a5e1-88a27aa8e356" />
+  <img width="1600" alt="image" src="https://github.com/user-attachments/assets/0bd1ed14-3133-4239-a5e1-88a27aa8e356" />
 </p>
+
 ### Meeting Room
 <p align="center">
-<img width="1700" alt="image" src="https://github.com/user-attachments/assets/ec367ec3-c9d8-47d7-be32-e4b95fcda763" />
+  <img width="1600" alt="image" src="https://github.com/user-attachments/assets/ec367ec3-c9d8-47d7-be32-e4b95fcda763" />
 </p>
+
 ### Chat Panel
 <p align="center">
-<img width="1700" alt="image" src="https://github.com/user-attachments/assets/340f0f48-5b04-43ac-a513-d697c655cd08" />
+  <img width="1600" alt="image" src="https://github.com/user-attachments/assets/340f0f48-5b04-43ac-a513-d697c655cd08" />
 </p>
 
 ## Features
