@@ -1,4 +1,4 @@
-# Meetly - Enterprise Video Conferencing Solution
+# Meetly - Video Conferencing Solution
 
 <div align="center">
 <img width="1908" height="881" alt="image" src="https://github.com/user-attachments/assets/ceed4c33-f03b-491a-aee9-7fb680967b80" />
